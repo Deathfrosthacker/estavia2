@@ -47,13 +47,26 @@ try {
     $dbError = true;
 }
 if (!$services) {
-    // Static fallback so the page still renders if the DB is unreachable
+    // Keep every service visible if the database is unreachable or empty.
     $services = [
-        ['icon_key' => 'audit', 'name' => 'Guarding Services', 'description' => 'Well-trained, disciplined and professional security personnel.'],
-        ['icon_key' => 'monitor', 'name' => 'Control Room Management', 'description' => '24/7 monitoring, rapid response and incident coordination.'],
-        ['icon_key' => 'truck', 'name' => 'Cargo Escort (Local & Transit)', 'description' => 'Safe and secure movement of your valuable cargo.'],
-        ['icon_key' => 'port', 'name' => 'Port Operations Security', 'description' => 'Secure operations at the port and surrounding areas.'],
         ['icon_key' => 'clipboard', 'name' => 'Risk Assessments', 'description' => 'Identify, assess and mitigate risks for a safer tomorrow.'],
+        ['icon_key' => 'search', 'name' => 'Private Investigations', 'description' => 'Discreet, professional and reliable investigative services.'],
+        ['icon_key' => 'audit', 'name' => 'Security Audits', 'description' => 'Evaluate, improve and strengthen your security posture.'],
+        ['icon_key' => 'truck', 'name' => 'Cargo Escort (Local & Transit)', 'description' => 'Safe and secure movement of your valuable cargo.'],
+        ['icon_key' => 'map', 'name' => 'Route Survey', 'description' => 'Assess routes, identify hazards, and plan safer journeys for cargo and personnel.'],
+        ['icon_key' => 'crowd', 'name' => 'Event / Functions Security Management', 'description' => 'Professional security for your special events and functions.'],
+        ['icon_key' => 'monitor', 'name' => 'Control Room Management', 'description' => '24/7 monitoring, rapid response and incident coordination.'],
+        ['icon_key' => 'install', 'name' => 'Security Equipment Installation', 'description' => 'CCTV, access control, alarms, fencing and more.'],
+        ['icon_key' => 'wrench', 'name' => 'Installation & Maintenance', 'description' => 'Of safety management & equipment — keep your systems running, always.'],
+        ['icon_key' => 'guard', 'name' => 'Guarding Services', 'description' => 'Well-trained, disciplined and professional security personnel.'],
+        ['icon_key' => 'training', 'name' => 'Security Training Programs', 'description' => 'Build skills. Enhance awareness. Strengthen your team.'],
+        ['icon_key' => 'port', 'name' => 'Port Operations Security', 'description' => 'Secure operations at the port and surrounding areas.'],
+        ['icon_key' => 'warehouse', 'name' => 'Loss Control (Warehouse, Retail & Logistics)', 'description' => 'Reduce losses, protect your inventory and assets.'],
+        ['icon_key' => 'badge', 'name' => 'Background Checks & Vetting', 'description' => 'Trusted people for a safer environment.'],
+        ['icon_key' => 'car', 'name' => 'Secure Transport & Guest Transfers', 'description' => 'Safe, reliable and professional transportation services.'],
+        ['icon_key' => 'chat', 'name' => 'Security Consultancy', 'description' => 'Tailored solutions for your unique needs.'],
+        ['icon_key' => 'drone', 'name' => 'Drone Surveillance & Inspection', 'description' => 'Advanced monitoring for greater security.'],
+        ['icon_key' => 'fire', 'name' => 'Fire Safety & Emergency Response', 'description' => 'Prepared today. Safer tomorrow.'],
         ['icon_key' => 'clock', 'name' => '24/7 Security Operations & Support', 'description' => 'Always on. Always alert.'],
     ];
 }

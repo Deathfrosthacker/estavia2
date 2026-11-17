@@ -1,14 +1,9 @@
 -- ============================================================
 --  Estavia Risk & Security Solutions Ltd — Database Schema
 --  Engine: MySQL 5.7+ / MariaDB 10.3+
---  Import this file via phpMyAdmin (Truehost cPanel) to create
---  the database, tables and seed data.
+--  Create/select the estavia_db database first, then import this file
+--  through phpMyAdmin. The script creates the tables and seed data.
 -- ============================================================
-
-CREATE DATABASE IF NOT EXISTS estavia_db
-  CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-
-USE estavia_db;
 
 -- ------------------------------------------------------------
 -- 1. Admin users (for the admin panel)

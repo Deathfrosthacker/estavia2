@@ -18,8 +18,6 @@ function db(): PDO
         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
         PDO::ATTR_EMULATE_PREPARES   => false,                    // REAL prepared statements
     ];
-    // Local dev override (see config.php). Production always uses DB_PASS.
-    $pass = defined('DB_PASS_LOCAL') ? DB_PASS_LOCAL : DB_PASS;
-    $pdo = new PDO($dsn, DB_USER, $pass, $options);
+    $pdo = new PDO($dsn, DB_USER, DB_PASS, $options);
     return $pdo;
 }

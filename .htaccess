@@ -1,0 +1,38 @@
+# ============================================================
+#  Estavia website — Apache hardening (works on Truehost cPanel)
+# ============================================================
+
+# --- Disable directory listing ---
+Options -Indexes
+
+# --- Default charset ---
+AddDefaultCharset utf-8
+
+# --- Security headers ---
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+  Header always set X-XSS-Protection "0"
+</IfModule>
+
+# --- Protect sensitive files ---
+<FilesMatch "\.(sql|md|log|ini|sh)$">
+  <IfModule mod_authz_core.c>
+    Require all denied
+  </IfModule>
+</FilesMatch>
+
+# --- Block direct access to the config directory ---
+RedirectMatch 403 ^/config/.*$
+
+# --- Never serve the .git folder (if you ever upload a repo) ---
+RedirectMatch 403 /\.git
+
+# --- Force HTTPS (uncomment after SSL is active on Truehost) ---
+# <IfModule mod_rewrite.c>
+#   RewriteEngine On
+#   RewriteCond %{HTTPS} off
+#   RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# </IfModule>

@@ -3,9 +3,8 @@
  * Estavia Risk & Security Solutions Ltd — Database configuration
  *
  * !!! IMPORTANT (Truehost deployment) !!!
- * 1. In cPanel open "MySQL Database Wizard" and create:
- *      - Database : estavia_db
- *      - User     : estavia_user
+ * 1. In cPanel open "MySQL Database Wizard" and create a database and user.
+ *    Use the full prefixed names assigned by your host.
  *      - Password : a STRONG password of your own
  * 2. Assign the user to the database with "ALL PRIVILEGES".
  * 3. Import database.sql through phpMyAdmin.
@@ -14,15 +13,13 @@
 
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'estavia_db');
-define('DB_USER', 'estavia_user');
-define('DB_PASS', 'CHANGE_ME_strong_password');   // <-- REPLACE on Truehost (see README)
+// These defaults work with a standard XAMPP installation. Replace them with
+// your hosting database credentials before deploying to a live server.
+define('DB_USER', 'root');
+define('DB_PASS', '');
 define('DB_CHARSET', 'utf8mb4');
 
-// Local development override (safe: file is blocked by .htaccess in production).
-// On Truehost just delete this block or leave it — it only triggers on port 8000.
-if (php_sapi_name() === 'cli-server' || ($_SERVER['SERVER_PORT'] ?? null) === '8000') {
-    define('DB_PASS_LOCAL', 'LocalTest#2026');
-}
+// Apache and the PHP development server use the same credentials above.
 
 /** Company contact details used across the site. */
 define('SITE_PHONE_1', '+254750856829');
