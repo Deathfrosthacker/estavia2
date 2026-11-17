@@ -1,6 +1,6 @@
-<?php
+﻿<?php
 /**
- * Estavia Risk & Security Solutions Ltd — Database configuration
+ * Estavia Risk & Security Solutions Ltd â€” Database configuration
  *
  * !!! IMPORTANT (Truehost deployment) !!!
  * 1. In cPanel open "MySQL Database Wizard" and create a database and user.
@@ -24,5 +24,6 @@ define('DB_CHARSET', 'utf8mb4');
 /** Company contact details used across the site. */
 define('SITE_PHONE_1', '+254750856829');
 define('SITE_PHONE_2', '+254729394652');
-define('SITE_EMAIL', 'estaviarisksecurity@gmail.com');
+define('SITE_EMAIL', 'info@estaviarisksecurity.co.ke');
+define('SALES_EMAIL', 'sales@estaviarisksecurity.co.ke');
 define('SITE_ADDRESS', 'Ganjoni, Off Moi Avenue, Mombasa, Kenya');

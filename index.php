@@ -1,6 +1,6 @@
-<?php
+﻿<?php
 /**
- * Estavia Risk & Security Solutions Ltd — Homepage (database-driven).
+ * Estavia Risk & Security Solutions Ltd â€” Homepage (database-driven).
  * Services are loaded from MySQL with a static fallback if the DB is down.
  */
 require_once __DIR__ . '/includes/db.php';
@@ -57,7 +57,7 @@ if (!$services) {
         ['icon_key' => 'crowd', 'name' => 'Event / Functions Security Management', 'description' => 'Professional security for your special events and functions.'],
         ['icon_key' => 'monitor', 'name' => 'Control Room Management', 'description' => '24/7 monitoring, rapid response and incident coordination.'],
         ['icon_key' => 'install', 'name' => 'Security Equipment Installation', 'description' => 'CCTV, access control, alarms, fencing and more.'],
-        ['icon_key' => 'wrench', 'name' => 'Installation & Maintenance', 'description' => 'Of safety management & equipment — keep your systems running, always.'],
+        ['icon_key' => 'wrench', 'name' => 'Installation & Maintenance', 'description' => 'Of safety management & equipment â€” keep your systems running, always.'],
         ['icon_key' => 'guard', 'name' => 'Guarding Services', 'description' => 'Well-trained, disciplined and professional security personnel.'],
         ['icon_key' => 'training', 'name' => 'Security Training Programs', 'description' => 'Build skills. Enhance awareness. Strengthen your team.'],
         ['icon_key' => 'port', 'name' => 'Port Operations Security', 'description' => 'Secure operations at the port and surrounding areas.'],
@@ -71,7 +71,7 @@ if (!$services) {
     ];
 }
 
-$pageTitle = 'Estavia Risk & Security Solutions Ltd — Protecting Assets. Securing Trust.';
+$pageTitle = 'Estavia Risk & Security Solutions Ltd â€” Protecting Assets. Securing Trust.';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -95,7 +95,7 @@ $pageTitle = 'Estavia Risk & Security Solutions Ltd — Protecting Assets. Secur
     "name": "Estavia Risk & Security Solutions Ltd",
     "description": "Security guarding, cargo escort, port operations security, CCTV and control room management in Kenya.",
     "telephone": "+254750856829",
-    "email": "estaviarisksecurity@gmail.com",
+    "email": "info@estaviarisksecurity.co.ke",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Ganjoni, Off Moi Avenue",
@@ -146,7 +146,7 @@ $pageTitle = 'Estavia Risk & Security Solutions Ltd — Protecting Assets. Secur
       <h1>Your Safety,<br /><span class="gold">Our Priority</span></h1>
       <p class="hero-tag">Protecting Assets. Securing Trust.</p>
       <p class="hero-lead">From guarding and investigations to port operations, cargo escort
-        and 24/7 control room management — Estavia delivers disciplined,
+        and 24/7 control room management â€” Estavia delivers disciplined,
         professional security across Kenya.</p>
       <div class="hero-actions">
         <a href="#services" class="btn btn-gold">Explore Our Services</a>
@@ -202,8 +202,8 @@ $pageTitle = 'Estavia Risk & Security Solutions Ltd — Protecting Assets. Secur
       <div class="section-head">
         <p class="kicker">What we do</p>
         <h2>Our <span class="gold">Services</span></h2>
-        <p class="section-sub">Nineteen integrated security solutions — from risk assessment
-          to drone surveillance — built to protect every part of your operation.</p>
+        <p class="section-sub">Nineteen integrated security solutions â€” from risk assessment
+          to drone surveillance â€” built to protect every part of your operation.</p>
       </div>
       <div class="services-grid">
         <?php foreach ($services as $svc): ?>
@@ -224,7 +224,7 @@ $pageTitle = 'Estavia Risk & Security Solutions Ltd — Protecting Assets. Secur
         <p class="kicker">Why Estavia</p>
         <h2>A partner you can <span class="gold">trust</span> with what matters most</h2>
         <p>Estavia Risk &amp; Security Solutions Ltd combines disciplined personnel,
-           modern technology and proven procedures to deliver security that works —
+           modern technology and proven procedures to deliver security that works â€”
            at the port, in your warehouse, on the road and at your event.</p>
         <ul class="why-list">
           <li>Vetted, trained and supervised security officers</li>
@@ -288,7 +288,7 @@ $pageTitle = 'Estavia Risk & Security Solutions Ltd — Protecting Assets. Secur
         <div class="sector-card"><h3>Ports &amp; Logistics</h3><p>Port operations, cargo escort, warehouse loss control and transit security.</p></div>
         <div class="sector-card"><h3>Corporate &amp; Commercial</h3><p>Office guarding, access control, background checks and executive protection.</p></div>
         <div class="sector-card"><h3>Events &amp; Hospitality</h3><p>Crowd management, VIP security and guest transfers for functions of any size.</p></div>
-        <div class="sector-card"><h3>Industrial &amp; Residential</h3><p>Factories, estates and homes — patrolled, monitored and protected.</p></div>
+        <div class="sector-card"><h3>Industrial &amp; Residential</h3><p>Factories, estates and homes â€” patrolled, monitored and protected.</p></div>
       </div>
     </div>
   </section>
@@ -331,17 +331,17 @@ $pageTitle = 'Estavia Risk & Security Solutions Ltd — Protecting Assets. Secur
         <p class="kicker">Questions</p>
         <h2>Frequently Asked <span class="gold">Questions</span></h2>
         <p>Can't find what you're looking for? Call us on
-          <a href="tel:<?= e(SITE_PHONE_1) ?>"><?= e(SITE_PHONE_1) ?></a> — we're available 24/7.</p>
+          <a href="tel:<?= e(SITE_PHONE_1) ?>"><?= e(SITE_PHONE_1) ?></a> â€” we're available 24/7.</p>
       </div>
       <div class="faq-list">
         <details class="faq-item">
           <summary>How quickly can you deploy guards to our site?</summary>
-          <p>For standard guarding contracts we can deploy within 24–48 hours of signing.
+          <p>For standard guarding contracts we can deploy within 24â€“48 hours of signing.
              Emergency deployments in Mombasa can often be arranged the same day.</p>
         </details>
         <details class="faq-item">
           <summary>Which areas do you cover?</summary>
-          <p>We are headquartered in Mombasa and operate across Kenya — including port,
+          <p>We are headquartered in Mombasa and operate across Kenya â€” including port,
              logistics corridors and upcountry transit routes for cargo escorts.</p>
         </details>
         <details class="faq-item">
@@ -351,7 +351,7 @@ $pageTitle = 'Estavia Risk & Security Solutions Ltd — Protecting Assets. Secur
         </details>
         <details class="faq-item">
           <summary>Do you provide equipment as well as personnel?</summary>
-          <p>Yes — we supply, install and maintain CCTV, access control, alarms and
+          <p>Yes â€” we supply, install and maintain CCTV, access control, alarms and
              other safety equipment as part of an integrated security plan.</p>
         </details>
         <details class="faq-item">
@@ -378,7 +378,7 @@ $pageTitle = 'Estavia Risk & Security Solutions Ltd — Protecting Assets. Secur
           </li>
           <li>
             <svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 7l10 6 10-6"/></svg>
-            <div><span>Email</span><a href="mailto:<?= e(SITE_EMAIL) ?>"><?= e(SITE_EMAIL) ?></a></div>
+            <div><span>Email</span><a href="mailto:<?= e(SITE_EMAIL) ?>"><?= e(SITE_EMAIL) ?></a><br><a href="mailto:<?= e(SALES_EMAIL) ?>"><?= e(SALES_EMAIL) ?></a></div>
           </li>
           <li>
             <svg viewBox="0 0 24 24"><path d="M12 21s-7-5.5-7-11a7 7 0 0114 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
@@ -386,7 +386,7 @@ $pageTitle = 'Estavia Risk & Security Solutions Ltd — Protecting Assets. Secur
           </li>
         </ul>
         <?php if ($dbError): ?>
-        <p class="db-warning">Note: the database is currently unreachable — showing cached content.</p>
+        <p class="db-warning">Note: the database is currently unreachable â€” showing cached content.</p>
         <?php endif; ?>
       </div>
       <form class="contact-form" id="quote-form" method="post" action="api/quote.php">
@@ -432,7 +432,7 @@ $pageTitle = 'Estavia Risk & Security Solutions Ltd — Protecting Assets. Secur
       <div>
         <h4>Contact</h4>
         <p>0750 856 829 | 0729 394 652</p>
-        <p><?= e(SITE_EMAIL) ?></p>
+        <p><a href="mailto:<?= e(SITE_EMAIL) ?>"><?= e(SITE_EMAIL) ?></a><br><a href="mailto:<?= e(SALES_EMAIL) ?>"><?= e(SALES_EMAIL) ?></a></p>
         <p><?= e(SITE_ADDRESS) ?></p>
       </div>
     </div>
